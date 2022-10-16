@@ -263,3 +263,43 @@ main{margin-top: 110px;}
   color: #84c54e;
   font-weight: 500;
 }
+
+#fealiyyet-section{
+  background-image: url("img/main/fealiyyet/fealiyyet-bg.jpg");
+  padding: 40px 0;
+}
+#fealiyyet-section h1{
+  font-weight: 700;
+  font-size: 46px;
+}
+#fealiyyet-section .mySwiper3{
+  width: 60%;
+}
+.mySwiper3 .sf-card{
+  /* padding: 5px 0 30px; */
+  height: 260px;
+  border-bottom: 1px solid #84c54e;
+}
+.mySwiper3 .sf-card span{
+  padding: 5px 0 10px;
+  color: #84c54e;
+  transition: 0.3s;
+}
+.mySwiper3 .sf-card:hover span{
+  color: #ff7e27;
+}
+.mySwiper3 .sf-card h4{
+  font-size: 20px;
+  color: #000;
+}
+
+@media only screen and (min-width:560px){
+  #fealiyyet-section .mySwiper3{
+    width: 80%;
+  }
+}
+@media only screen and (min-width:768px){
+  #fealiyyet-section .mySwiper3{
+    width: 100%;
+  }
+}

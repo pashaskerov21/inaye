@@ -108,7 +108,7 @@
             </nav>
         </div>
     </header>
-    <main class="py-5 border border-dark">
+    <main class="py-5">
       <section id="swiper-section-1" class="w-100">
         <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
@@ -153,6 +153,86 @@
         <p class="px-3 m-0">Hər insana fayda gətirmək üçün ən həssas fərdlərə çatmağa diqqət edirik.</p>
       </div>
     </div>
+    <section id="fealiyyet-section" class="d-flex flex-column align-items-center">
+        <h1 class="py-1 m-0">FƏALİYYƏTLƏR</h1>
+        <span class="fs-5">Bizim ən son fəaliyyətlərimiz</span>
+        <div class="container py-3 my-5">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-1.jpg" class="w-100">
+                            <span>2022-05-22</span>
+                            <h4>Ailə ziyarətləri</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-2.jpg" class="w-100">
+                            <span>2022-04-27</span>
+                            <h4>"Şəhid və Qazi ailələri ilə iftar süfrəsi"</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-3.jpg" class="w-100">
+                            <span>2022-04-09</span>
+                            <h4>HESABAT</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-4.jpg" class="w-100">
+                            <span>2022-04-04</span>
+                            <h4>Yaxşlıq İnsanlıqdır</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-5.jpg" class="w-100">
+                            <span>2022-04-02</span>
+                            <h4>Ramazan Ayınız Mübarək!</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-6.jpg" class="w-100">
+                            <span>2022-03-31</span>
+                            <h4>31 Mart -Azərbaycanlıların Soyqırımı Günüdür. Unutma! Unutdurma!</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-7.jpg" class="w-100">
+                            <span>2022-03-31</span>
+                            <h4>Təşəkkür edirik</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-8.jpg" class="w-100">
+                            <span>2022-03-18</span>
+                            <h4>Novruz Bayramınız Mübarək</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-9.jpg" class="w-100">
+                            <span>2022-03-15</span>
+                            <h4>Torpaq çərşənbəniz mübarək!</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="sf-card d-flex flex-column">
+                            <img src="img/main/fealiyyet/slide/slide-10.jpg" class="w-100">
+                            <span>2022-03-14</span>
+                            <h4>Şagirdlərə stoüstü oyunlar alındı</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
     <footer class="d-flex flex-column">
         <div class="footer-top container d-flex flex-column align-items-center flex-md-row align-items-md-start w-100 justify-content-md-between">
@@ -249,6 +329,27 @@
           pagination: {el: ".swiper-pagination",clickable: true,},
         });
     </script>
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 1,
+            autoplay: {delay: 3000,},
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              768: {slidesPerView: 2,spaceBetween: 40,},
+              992: {slidesPerView: 3,spaceBetween: 40,},
+              1140: {slidesPerView: 4,spaceBetween: 50,},
+            },
+          });
+      </script>
     
 </body>
 </html>
