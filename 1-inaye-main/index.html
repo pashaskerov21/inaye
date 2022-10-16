@@ -108,7 +108,52 @@
             </nav>
         </div>
     </header>
-    <main class="py-5"></main>
+    <main class="py-5 border border-dark">
+      <section id="swiper-section-1" class="w-100">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                    <img src="img/main/swiper-1/slide-1.jpg" >
+                    <div class="slide-content position-absolute  d-flex flex-column">
+                        <div class="content-header align-self-start my-2">"İnayə" Xeyriyyə İctimati Birliyi</div>
+                        <div class="content-text align-self-center my-2">"İnayə" Xeyriyyə İctimai Birliyimiz ölkə üzrə insanlara dəstəkdir.</div>
+                        <a href="#" class="content-button align-self-end my-2">Ətraflı <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                    <img src="img/main/swiper-1/slide-2.jpg" >
+                    <div class="slide-content position-absolute  d-flex flex-column">
+                        <div class="content-header align-self-start align-self-lg-center my-2">"İnayə" Xeyriyyə İctimati Birliyi</div>
+                        <div class="content-text align-self-center my-2">Əyani yardımlarınız bitməsin</div>
+                        <a href="#" class="content-button align-self-end align-self-lg-center my-2">Ətraflı <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                    <img src="img/main/swiper-1/slide-1.jpg" >
+                    <div class="slide-content position-absolute  d-flex flex-column">
+                        <div class="content-header align-self-start my-1">Şəhid ailələri ilə görüş</div>
+                        <div class="content-text align-self-center my-1">Başımızın dik, alnımızın açıq olmasına səbəb olan şəhidlərimizin bizə əmanət buraxdıqları xanımları və onların övladları ilə İnayə Xeyriyyə İctimai Birliyi olaraq görüş keçirdik...</div>
+                        <a href="#" class="content-button align-self-end my-1">Ətraflı <i class="fa-solid fa-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container d-flex flex-column p-5 flex-md-row px-md-0 slide-bottom-info">
+      <div class="d-flex align-items-center my-2">
+        <img src="img/main/small-img/icon-1.png" width="80" alt="icon1">
+        <p class="px-3 m-0">İşimiz hər bit insanın haqqını və rifahını təbliğ etməkdir.</p>
+      </div>
+      <div class="d-flex align-items-center my-2">
+        <img src="img/main/small-img/icon-2.png" width="80" alt="icon2">
+        <p class="px-3 m-0">Bütün ölkə üzrə insanlara dəstək üçün ümid proqramlarını qururuq.</p>
+      </div>
+      <div class="d-flex align-items-center my-2">
+        <img src="img/main/small-img/icon-3.png" width="80" alt="icon3">
+        <p class="px-3 m-0">Hər insana fayda gətirmək üçün ən həssas fərdlərə çatmağa diqqət edirik.</p>
+      </div>
+    </div>
+    </main>
     <footer class="d-flex flex-column">
         <div class="footer-top container d-flex flex-column align-items-center flex-md-row align-items-md-start w-100 justify-content-md-between">
             <div class="footer-info-panel d-flex flex-column align-items-center w-100 my-3 align-items-md-start">
@@ -183,31 +228,27 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        autoplay: {
-        delay: 3000,
-        },
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+          slidesPerView: 2,
+          autoplay: {delay: 3000,},
+          spaceBetween: 10,
+          loop: true,
+          pagination: {el: ".swiper-pagination",clickable: true,},
+          breakpoints: {
+            540: {slidesPerView: 3,spaceBetween: 40,},
+            992: {slidesPerView: 4,spaceBetween: 40,},
+            1100: {slidesPerView: 5,spaceBetween: 50,},
           },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1100: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        },
-      });
+        });
     </script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+          spaceBetween: 30,
+          effect: "fade",
+          autoplay: {delay: 6000,},
+          navigation: {nextEl: ".swiper-button-next",prevEl: ".swiper-button-prev",},
+          pagination: {el: ".swiper-pagination",clickable: true,},
+        });
+    </script>
+    
 </body>
 </html>
