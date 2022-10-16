@@ -163,7 +163,7 @@ setTimeout(function(){
         spanValuesFast[0].innerHTML = 9968;
         spanValuesFast[1].innerHTML = 2219;
       }
-    },1)
+    },10)
   })
   
   spanValuesLow.forEach((spanValue) => {
@@ -177,5 +177,5 @@ setTimeout(function(){
       }
     },1)
   })
-},2000)
+},4000)
 
