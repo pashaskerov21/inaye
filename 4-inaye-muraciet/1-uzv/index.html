@@ -108,7 +108,38 @@
             </nav>
         </div>
     </header>
-    <main class="py-5"></main>
+    <main class="pt-5 container">
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="uzv-content d-flex flex-column align-items-center py-3 px-4">
+                    <span>Üzv ol</span>
+                    <p>
+                        Siz buradan üzv olaraq bizə "İnayə" Xeyriyyə İctimati Birliyinə 
+                        üzv olmuş olursunuz. Bizim keçirtdəcəyimiz tədbirlərə, layihələrə, 
+                        aksiyalara dəvət olunub iştirak edə bilərsiniz. Üzv olmaq üçün emailinizə təsdiq emaili gələcək.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                
+                <form action="#" autocomplete="off" class="d-flex flex-column py-5">
+                    <div class="my-2">
+                        <label for="user-name">Ad,Soyad,Ata adı:</label>
+                        <input type="text" class="form-control" id="user-name" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-email">Email:</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="user@email.com" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-phone">Telefon:</label>
+                        <input type="text" pattern="[0-9\s]{1,}" class="form-control" id="user-phone" placeholder="555 555 55 55" required>
+                    </div>
+                    <button type="submit">Üzv ol</button>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer class="d-flex flex-column">
         <div class="footer-top container d-flex flex-column align-items-center flex-md-row align-items-md-start w-100 justify-content-md-between">
             <div class="footer-info-panel d-flex flex-column align-items-center w-100 my-3 align-items-md-start">

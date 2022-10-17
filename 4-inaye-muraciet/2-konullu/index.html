@@ -108,7 +108,51 @@
             </nav>
         </div>
     </header>
-    <main class="py-5"></main>
+    <main class="pt-5 container">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <div class="uzv-content d-flex flex-column align-items-center py-3 px-4">
+                    <span>Könüllü Ol</span>
+                    <p>
+                        Siz buradan üzv olaraq bizə "İnayə" Xeyriyyə İctimati Birliyinə 
+                        könüllü olmuş olursunuz. Bizim keçirdəcəyimiz tədbirlə, edəcəyimiz 
+                        yardımlar kimi layihələrdə könüllü iştirak edə biləcəksiniz.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                
+                <form action="#" autocomplete="off" class="d-flex flex-column py-5">
+                    <div class="my-2">
+                        <label for="user-name">Ad,Soyad,Ata adı:</label>
+                        <input type="text" class="form-control" id="user-name" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-email">Email:</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="user@email.com" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-phone">Telefon:</label>
+                        <input type="text" pattern="[0-9\s]{1,}" class="form-control" id="user-phone" placeholder="555 555 55 55" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-select">Bizə necə kömək edə bilərsiniz?</label>
+                        <select id="user-select" class="form-select">
+                            <option>Tədbirlərdə könüllü iştirak</option>
+                            <option>Ərzaq yardımları</option>
+                            <option>Geyim yardımları</option>
+                            <option>Digər</option>
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <label for="user-message">Bizə necə kömək edə bilərsiniz?</label>
+                        <textarea  id="user-message" class="form-control" cols="30" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Üzv ol</button>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer class="d-flex flex-column">
         <div class="footer-top container d-flex flex-column align-items-center flex-md-row align-items-md-start w-100 justify-content-md-between">
             <div class="footer-info-panel d-flex flex-column align-items-center w-100 my-3 align-items-md-start">
