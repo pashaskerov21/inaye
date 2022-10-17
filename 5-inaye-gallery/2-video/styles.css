@@ -98,6 +98,85 @@ nav .nav-link a, .nav-link span {
 .nav-drop-menu .drop-menu-link {color: #fff;transition: 0.3s;}
 .nav-drop-menu a:hover {color: #000;}
 
+
+
+
+
+main{margin-top: 110px;}
+main h1{
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+main h1:hover{color: #ff7e27;}
+@media only screen and (min-width:768px){
+  main h1{font-size: 60px;}
+}
+.video-item{
+  width: 98%;
+  position: relative;
+  margin: 20px 0;
+}
+.video-item .hidden-div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hidden-div a{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(255,255,255,0.4);
+  transition: 0.3s;
+  font-size: 20px;
+  animation: move-down-btn 0.5s ease forwards;
+}
+.hidden-div a:hover{
+  background-color: rgba(0,0,0,0.8);
+  transform: scale(1.2);
+}
+@keyframes move-down-btn{
+  0%{transform: scale(0);opacity: 0;}
+  100%{transform: scale(1.2);opacity: 1;}
+}
+.btn-group a{
+  padding: 5px 15px;
+  color: #918A8A;
+  margin: 0 3px;
+  background-color: #F6F5F2;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.btn-group a:first-child,
+.btn-group a:last-child{
+  background-color: #333333;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.btn-group a:first-child:hover,
+.btn-group a:last-child:hover{
+  background-color: #ff7e27;
+}
+.btn-group a:nth-child(2){background-color: #84c54e;color: #fff;}
+
+
+
+
+
+
+
 footer {background-color: #333333;}
 .footer-top{padding: 80px 0;}
 .footer-logo img {width: 150px;}

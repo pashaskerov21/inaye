@@ -141,3 +141,98 @@ footer .swiper-slide {
     .footer-logo img {width: 180px;}
     .footer-logo p {font-size: 25px;}
 }
+
+
+main{
+  margin-top: 110px;
+}
+.contact h5{
+  font-size: 25px;
+  transition: 0.3s;
+  cursor: default;
+}
+.contact h5:hover{
+  color: #ff7e27;
+}
+.contact span:first-child{
+  font-weight: 700;
+}
+.phone span:last-child, .email span:last-child{
+  color: #84c54e;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.phone span:last-child:hover, .email span:last-child:hover{
+  color: #ff7e27;
+}
+.sosial a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 5px;
+}
+.sosial a:nth-child(1){
+  background-color: #3B5998;
+  border: 3px solid #3B5998;
+}
+.sosial a:nth-child(1):hover{
+  color: #3B5998;
+  background-color: #fff;
+}
+.sosial a:nth-child(2){
+  background-color: #E52D27;
+  border: 3px solid #E52D27;
+}
+.sosial a:nth-child(2):hover{
+  color: #E52D27;
+  background-color: #fff;
+}
+.sosial a:nth-child(3){
+  background-color: #1AB7EA;
+  border: 3px solid #1AB7EA;
+}
+.sosial a:nth-child(3):hover{
+  color: #1AB7EA;
+  background-color: #fff;
+}
+.sosial a:nth-child(4){
+  background-color: #CC2127;
+  border: 3px solid #CC2127;
+}
+.sosial a:nth-child(4):hover{
+  color: #CC2127;
+  background-color: #fff;
+}
+form{
+  width: 90%;
+  padding: 15px 0;
+}
+.form-floating{
+  margin: 15px 0;
+}
+.form-control{
+  border: 1px solid #84c54e;
+  caret-color: #84c54e;
+}
+.form-control:focus{
+  border: 1px solid #84c54e;
+  box-shadow: 1px 1px 5px #84c54e, -1px -1px 5px #84c54e;
+}
+form button{
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #84c54e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+form button:hover{
+  background-color: #ff7e27;
+}

@@ -9,9 +9,9 @@ body::-webkit-scrollbar-thumb {background: #84c54e;}
 #offcanvas-open-btn {font-size: 25px;transition: 0.3s;border: 0;}
 #offcanvas-open-btn:hover {color: #84c54e;}
 #page-offcanvas {background-color: #84c54e;overflow-y: auto;}
-#page-offcanvas::-webkit-scrollbar {width: auto;} 
-#page-offcanvas::-webkit-scrollbar-track {background: #f1f1f1;}
-#page-offcanvas::-webkit-scrollbar-thumb {background: rgba(0,0,0,0.7);}
+#page-offcanvas::-webkit-scrollbar {width: 7px;} 
+#page-offcanvas::-webkit-scrollbar-track {background: #84c54e;}
+#page-offcanvas::-webkit-scrollbar-thumb {background: rgba(0,0,0,0.7);border-radius: 10px;}
 .canvas-link {
   width: 100%;
   padding: 13px 0;
