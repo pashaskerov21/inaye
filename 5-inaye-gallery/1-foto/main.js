@@ -147,3 +147,18 @@ body.onscroll = function(){
 pageUpScrollBtn.onclick = function(){
     window.scrollTo(0,0);
 }
+
+
+let imageItems = document.querySelectorAll(".image-item");
+let hiddenDivs = document.querySelectorAll(".hidden-div");
+
+for(let i = 0; i < imageItems.length;i++){
+  (function(index){
+    imageItems[i].addEventListener("mouseover",function(){
+      hiddenDivs[index].classList.remove("d-none");
+    });
+    imageItems[i].addEventListener("mouseout",function(){
+      hiddenDivs[index].classList.add("d-none");
+    })
+  })(i);
+}
