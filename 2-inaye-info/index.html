@@ -254,32 +254,36 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        autoplay: {
-        delay: 3000,
-        },
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          autoplay: {
+          delay: 3000,
           },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+          spaceBetween: 10,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
           },
-          1100: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+          breakpoints: {
+            380:{
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            540: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            1100: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
           },
-        },
-      });
-    </script>
+        });
+      </script>
 </body>
 </html>

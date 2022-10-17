@@ -237,6 +237,7 @@ main{margin-top: 110px;}
 .yardim-button{
   padding: 10px 20px;
   background-color: #FFE400;
+  font-weight: 600;
   color: #000;
   transition: 0.3s;
 }
@@ -245,15 +246,20 @@ main{margin-top: 110px;}
   color: #fff;
 }
 @media only screen and (min-width:768px){
-  #yardlm-section{height: 90vh;}
+  #yardim-section{height: 90vh;}
   .yardim-header{font-size: 32px;font-weight: 500;}
   .yardim-text{font-size: 23px;}
   .yardim-button{padding: 15px 25px;font-size: 25px;}
 }
 @media only screen and (min-width:992px){
-  #yardlm-section{height: 100vh;}
+  #yardim-section{height: 100vh;}
   .yardim-header{font-size: 42px;font-weight: 500;}
   .yardim-button{padding: 15px 30px;font-size: 30px;}
+}
+@media only screen and (min-width:1400px){
+  #yardim-section{height: 80vh;}
+  .yardim-header{font-size: 52px;font-weight: 500;}
+  .yardim-button{padding: 15px 30px;font-size: 35px;}
 }
 
 
