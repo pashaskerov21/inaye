@@ -141,3 +141,34 @@ footer .swiper-slide {
     .footer-logo img {width: 180px;}
     .footer-logo p {font-size: 25px;}
 }
+
+
+main{
+  margin-top: 110px;
+  background-image: url("img/main/bg-img.jpg");
+}
+.error-div h1{
+  color: #84c54e;
+  font-size: 150px;
+  font-weight: bold;
+}
+.error-div h5{
+  font-size: 30px;
+  color: #ff7e27;
+}
+.error-div p{
+  font-size: 22px;
+}
+.error-div a{
+  color: #fff;
+  background-color: #84c54e;
+  padding: 10px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 30px 0;
+  transition: 0.3s;
+}
+.error-div a:hover{
+  background-color: #ff7e27;
+}
