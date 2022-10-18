@@ -23,6 +23,14 @@ body::-webkit-scrollbar-thumb {background: #84c54e;}
 .canvas-link.canvas-active-color {background-color: #6a9e3e;}
 .canvas-link:hover {background-color: #6a9e3e;}
 .canvas-link a, .canvas-link span {color: #fff;font-weight: 500;}
+.canvas-link i{
+  padding: 10px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.canvas-link i:hover{
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.7), -1px -1px 5px rgba(0,0,0,0.7);
+}
 .canvas-btn {
   background-color: #ffe400;
   font-weight: 500;
