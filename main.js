@@ -152,6 +152,7 @@ pageUpScrollBtn.onclick = function(){
 
 
 
+
 let spanValuesFast = document.querySelectorAll(".counter-fast");
 let spanValuesLow = document.querySelectorAll(".counter-low");
 
