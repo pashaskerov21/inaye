@@ -150,42 +150,6 @@ pageUpScrollBtn.onclick = function(){
 
 
 
-
-
-
-let spanValuesFast = document.querySelectorAll(".counter-fast");
-let spanValuesLow = document.querySelectorAll(".counter-low");
-
-setTimeout(function(){
-  spanValuesFast.forEach((spanValue) => {
-    let startValue = 0;
-    let endValue = parseInt(spanValue.getAttribute("data-val"));
-    let counter = setInterval(function(){
-      startValue += 25;
-      spanValue.innerHTML = startValue;
-      if(startValue == endValue){
-        clearInterval(counter);
-        spanValuesFast[0].innerHTML = 9968;
-        spanValuesFast[1].innerHTML = 2219;
-      }
-    },10)
-  })
-  
-  spanValuesLow.forEach((spanValue) => {
-    let startValue = 0;
-    let endValue = parseInt(spanValue.getAttribute("data-val"));
-    let counter = setInterval(function(){
-      startValue += 1;
-      spanValue.innerHTML = startValue;
-      if(startValue == endValue){
-        clearInterval(counter)
-      }
-    },1)
-  })
-},4000)
-
-
-
 let imageItems = document.querySelectorAll(".image-item");
 let hiddenDivs = document.querySelectorAll(".hidden-div");
 
