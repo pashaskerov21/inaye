@@ -173,7 +173,7 @@ a, button, div, span, p, i{
     position: fixed;
     animation: show-fix-header 0.5s ease forwards;
     box-shadow: 0 0 5px var(--black-8);
-    z-index: 9999;
+    z-index: 9;
     padding: 20px 30px !important;
 }
 .page-up-scroll-btn{
@@ -588,7 +588,7 @@ footer .sosial-icons a:hover{
 
 
 /*------------MEQSED SECTION SM-------------*/
-.meqsed-section-sm{padding: 50px 0;}
+.meqsed-section-sm{padding: 50px;}
 .meqsed-col{
     display: flex;
     justify-content: center;
