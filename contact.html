@@ -18,19 +18,19 @@
         <div class="container">
             <div class="mobile-header d-xl-none">
                 <div class="header-logo">
-                    <a href="main.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
+                    <a href="index.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
                     <p>XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
                 </div>
                 <button type="button" class="offcanvas-open-btn" data-bs-toggle="offcanvas" data-bs-target="#inaye-offcanvas"><i class="fa-solid fa-bars fa-2x"></i></button>
             </div>
             <div class="offcanvas offcanvas-end" id="inaye-offcanvas">
                 <div class="offcanvas-header">
-                    <a href="main.html"><img src="image/logo/inaye_logo_white.svg"></a>
+                    <a href="index.html"><img src="image/logo/inaye_logo_white.svg"></a>
                     <button type="button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fa-2x"></i></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="canvas-links-wrapper">
-                        <a href="main.html" class="canvas-link">Əsas</a>
+                        <a href="index.html" class="canvas-link">Əsas</a>
                         <a href="about.html" class="canvas-link">Haqqımızda</a>
                         <button class="canvas-link collapse-button" data-bs-toggle="collapse" data-bs-target="#fealiyyet-collapse"><span>Fəaliyyətlər</span><i class="fa-solid fa-chevron-down"></i></button>
                         <div class="collapse" id="fealiyyet-collapse">
@@ -82,13 +82,13 @@
                 <div class="row w-100">
                     <div class="col-3 d-flex justify-content-center">
                         <div class="header-logo">
-                            <a href="main.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
+                            <a href="index.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
                             <p>XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
                         </div>
                     </div>
                     <div class="col-9 d-flex justify-content-center">
                         <div class="nav-links-wrapper">
-                            <a href="main.html" class="nav-link">Əsas</a>
+                            <a href="index.html" class="nav-link">Əsas</a>
                             <a href="about.html" class="nav-link">Haqqımızda</a>
                             <div class="dropdown-button">
                                 <span class="nav-link">Fəaliyyətlər<i class="fa-solid fa-chevron-down"></i></span>
@@ -131,13 +131,68 @@
         </div>
     </header>
 
+
+    <main class="inaye-contact">
+        <div class="w-100">
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.9703827024034!2d49.8612688!3d40.410163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087fe97f06a0f%3A0x985ab0bc3a7e48c7!2zxLBuYXnJmSB4ZXlyaXl5yZkgaWN0aW1haSBiaXJsaXlp!5e0!3m2!1saz!2s!4v1666030726086!5m2!1saz!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="d-flex flex-column p-4 contact-left">
+                        <span class="header">Əlaqə</span>
+                        <div class="contact-item"><span>Ünvan: </span><a href="#">Bakı, Nərimanov rayonu, Əhməd Rəcəbli küçəsi 2/24</a></div>
+                        <div class="contact-item"><span>Tel: </span><a href="#">+994 55 540 25 50</a></div>
+                        <div class="contact-item"><span>Email: </span><a href="#">info@inaye.az</a></div>
+                        <span class="header">Bizimlə əlaqə</span>
+                        <p>Bizimlə sosial şəbəkələrdən, ünvanımızdan və ya əlaqə nömrəmizdən əlaqə qura bilərsiniz.</p>
+                        <span class="header">Sosiallar</span>
+                        <div class="sosial py-3 d-flex">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <form action="#" autocomplete="off">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="user-name" placeholder="ad" required>
+                            <label for="user-name">Adınız</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control"  id="user-email" placeholder="email" required>
+                            <label for="user-email">Emailiniz</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="user-phone" placeholder="tel" pattern="[0-9\s]{1,}" required>
+                            <label for="user-phone">Telefon</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="user-subject" placeholder="movzu" required>
+                            <label for="user-subject">Mövzu</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="user-msg" style="height: 150px;resize:none;" placeholder="mesaj"></textarea>
+                            <label for="user-msg">Mesajınız</label>
+                        </div>
+                        <button type="submit">Göndər</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
     <footer>
         <div class="container">
             <div class="footer-top row">
                 <div class="col-12 col-md-6">
                     <div class="footer-info-panel">
                         <div class="footer-logo">
-                            <a href="main.html"><img src="image/logo/inaye_logo_white.svg" alt="logo"></a>
+                            <a href="index.html"><img src="image/logo/inaye_logo_white.svg" alt="logo"></a>
                             <p class="py-2">XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
                         </div>
                         <div class="footer-info-content">

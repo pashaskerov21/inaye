@@ -131,6 +131,23 @@
     0%{opacity: 0; transform: translateY(100px);}
     100%{opacity: 1;transform: translateY(0);}
 }
+@-webkit-keyframes show-hover-div{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes show-hover-div{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes show-photo-button{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+@keyframes show-photo-button{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
 
 /*-----------BASIC--------------*/
 *{margin: 0;padding: 0;box-sizing: border-box;}
@@ -168,7 +185,6 @@ a, button, div, span, p, i{
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
 }
-
 .header-transform{
     position: fixed;
     animation: show-fix-header 0.5s ease forwards;
@@ -237,15 +253,12 @@ section{width: 100%;}
     border-radius: 50%;
     opacity: 1;
 }
-
 .iane-button{
     font-size: var(--fs-5);
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: 700;
 }
-
-
 .sosial-icons{
     display: flex;
     align-items: center;
@@ -279,6 +292,40 @@ section{width: 100%;}
     color: var(--text-color-3);
 }
 
+form{width: 90%;padding: 10px;}
+form label{padding: 5px;transition: 0.3s;}
+form label:hover{color: var(--text-color-3);}
+form .form-control{
+    border: 1px solid var(--design-color-1); 
+    caret-color: var(--design-color-1);
+}
+form .form-control:focus{
+  border: 1px solid var(--design-color-1);
+  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);
+}
+form .form-select{border: 1px solid var(--design-color-1);}
+form .form-select:focus{
+  border: 1px solid var(--design-color-1);
+  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);
+}
+form button{
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 20px 0;
+  align-self: center;
+  background-color: var(--bg-color-1);
+  color: var(--text-color-10);
+}
+form button:hover{
+  background-color: var(--bg-color-3);
+  color: #fff;
+  animation: pulse-orange 1s ease infinite;
+}
+.form-floating{
+    margin: 15px 0;
+}
 
 
 /*------------HEADER-----------*/
@@ -295,7 +342,7 @@ header .container{display: flex; justify-content: center;}
     padding: 20px 5px;}
 .header-logo{display: flex; flex-direction: column; justify-content: center;align-items: center;}
 .header-logo img {width: 80px;}
-.header-logo p {color: #db1515;margin: 0;font-weight: 600; font-size: 12px;}
+.header-logo p {color: #db1515;font-weight: 600; font-size: 12px;padding: 5px 0;}
 
 .offcanvas-open-btn{ padding: 15px 0;}
 .offcanvas-open-btn:hover{color: var(--text-color-1);}
@@ -978,7 +1025,6 @@ footer .sosial-icons a:hover{
     color: #fff;
     animation: pulse-green 1s ease infinite;
 }
-
 .btn-group a{
   padding: 5px 10px;
   font-size: 10px;
@@ -987,7 +1033,6 @@ footer .sosial-icons a:hover{
   background-color: var(--bg-color-7);
   border-radius: 5px;
 }
-
 .btn-group a:hover{
     background-color: var(--bg-color-1);
     color: var(--bg-color-10);
@@ -1007,6 +1052,8 @@ footer .sosial-icons a:hover{
 }
 .btn-group a.active{background-color: var(--bg-color-1);color: var(--text-color-10);}
 
+
+/*-------INAYE SUBSCRIBE PAGE----------*/
 .inaye-uzv .uzv-content span{
     font-size: 40px;
     color: var(--text-color-1);
@@ -1014,28 +1061,6 @@ footer .sosial-icons a:hover{
     padding: 10px 0;
   }
 .inaye-uzv .uzv-content p{border-left: 3px solid var(--design-color-1);padding: 0 10px;}
-.inaye-uzv form{width: 90%;padding: 10px;}
-.inaye-uzv form label{padding: 5px;transition: 0.3s;}
-.inaye-uzv form label:hover{color: var(--text-color-3);}
-.inaye-uzv .form-control{border: 1px solid var(--design-color-1); caret-color: var(--design-color-1);}
-.inaye-uzv .form-control:focus{
-  border: 1px solid var(--design-color-1);
-  box-shadow: 1px 1px 5px #84c54e,-1px -1px 5px var(--design-color-1);
-}
-.inaye-uzv form button{
-  padding: 13px 30px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 10px;
-  margin: 20px 0;
-  align-self: center;
-  background-color: var(--bg-color-4);
-}
-.inaye-uzv form button:hover{
-  background-color: var(--bg-color-3);
-  color: #fff;
-  animation: pulse-orange 1s ease infinite;
-}
 .inaye-konullu .uzv-content span{
   font-size: 40px;
   color: var(--text-color-1);
@@ -1043,34 +1068,6 @@ footer .sosial-icons a:hover{
   padding: 10px 0;
 }
 .inaye-konullu .uzv-content p{border-left: 3px solid var(--design-color-1);padding: 0 10px;}
-.inaye-konullu form{width: 70%;padding: 10px;}
-.inaye-konullu form label{padding: 5px;transition: 0.3s;}
-.inaye-konullu form label:hover{color: #ff7e27;}
-.inaye-konullu .form-control{border: 1px solid var(--design-color-1); caret-color: var(--design-color-1);}
-.inaye-konullu .form-control:focus{
-  border: 1px solid var(--design-color-1);
-  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);}
-.inaye-konullu .form-select{border: 1px solid #84c54e;}
-.inaye-konullu .form-select:focus{
-  border: 1px solid var(--design-color-1);
-  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);}
-.inaye-konullu form button{
-  border: none;
-  padding: 13px 30px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 10px;
-  margin: 20px 0;
-  align-self: center;
-  background-color: var(--bg-color-4);
-  transition: 0.3s;
-}
-.inaye-konullu form button:hover{
-  background-color: var(--bg-color-3);
-  color: var(--text-color-10);
-  animation: pulse-orange 1s ease infinite;
-}
-
 .inaye-ehtiyac{
     display: flex;
     justify-content: center;
@@ -1104,6 +1101,7 @@ footer .sosial-icons a:hover{
   background-color: #ff7e27;
 }
 
+/*-------INAYE GALLERY----------*/
 .inaye-gallery .container{
     display: flex;
     flex-direction: column;
@@ -1116,38 +1114,34 @@ footer .sosial-icons a:hover{
     font-weight: bold;
     padding: 15px;
 }
-.photos-wrapper{
+.gallery-wrapper{
     width: 100%;
 }
-.photo-col{
+.gallery-col{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.photo-item{
+.gallery-item{
     width: 100%;
     position: relative;
     margin: 20px 0;
 }
-.photo-item img{
+.gallery-item img{
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-.photo-item .hover-absolute-div{
+.gallery-item .hover-absolute-div{
     display: none;
     justify-content: center;
     align-items: center;
     background-color: var(--black-7);
     animation: show-hover-div 0.5s ease forwards;
 }
-.photo-item:hover .hover-absolute-div{display: flex;}
-@keyframes show-hover-div{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
+.gallery-item:hover .hover-absolute-div{display: flex;}
 
-.photo-item .hover-absolute-div a{
+.gallery-item .hover-absolute-div a{
     width: 60px;
     height: 60px;
     display: flex;
@@ -1159,10 +1153,85 @@ footer .sosial-icons a:hover{
     font-size: 20px;
     animation: show-photo-button 0.5s ease forwards;
 }
-.photo-item .hover-absolute-div a:hover{
+.gallery-item .hover-absolute-div a:hover{
     background-color: var(--text-color-3);
 }
-@keyframes show-photo-button{
-    0%{transform: scale(0);}
-    100%{transform: scale(1);}
+/*------INAYE CONTACT-------*/
+.inaye-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.inaye-contact .container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-left .header{
+    font-size: 27px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.contact-item{padding: 5px 0;}
+.contact-left .contact-item a{color: #000;}
+.contact-left .contact-item:nth-of-type(2) a{color: var(--text-color-1);}
+.contact-left .contact-item:nth-of-type(3) a{color: var(--text-color-1);}
+.contact-left .contact-item:nth-of-type(2) a:hover{color: var(--text-color-3);}
+.contact-left .contact-item:nth-of-type(3) a:hover{color: var(--text-color-3);}
+.contact-left span{font-weight: 700;}
+
+.inaye-contact .sosial a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 5px;
+}
+.inaye-contact .sosial a:nth-child(1){
+  background-color: #3B5998;
+  border: 3px solid #3B5998;
+}
+.inaye-contact .sosial a:nth-child(1):hover{
+  color: #3B5998;
+  background-color: #fff;
+}
+.inaye-contact .sosial a:nth-child(2){
+  background-color: #E52D27;
+  border: 3px solid #E52D27;
+}
+.inaye-contact .sosial a:nth-child(2):hover{
+  color: #E52D27;
+  background-color: #fff;
+}
+.inaye-contact .sosial a:nth-child(3){
+  background-color: #1AB7EA;
+  border: 3px solid #1AB7EA;
+}
+.inaye-contact .sosial a:nth-child(3):hover{
+  color: #1AB7EA;
+  background-color: #fff;
+}
+.inaye-contact .sosial a:nth-child(4){
+  background-color: #CC2127;
+  border: 3px solid #CC2127;
+}
+.inaye-contact .sosial a:nth-child(4):hover{
+  color: #CC2127;
+  background-color: #fff;
+}
+
+/*----------INAYE ACTIVITES PAGE--------*/
+
+.inaye-activities-page{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.page-image{width: 100%;}
+.page-image img{width: 100%;min-height: 300px;object-fit: cover;}
+.page-text h1{padding: 10px 0;font-weight: 700;}
+.page-text span{color: var(--text-color-1);}
+
+
+
