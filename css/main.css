@@ -174,7 +174,7 @@ a, button, div, span, p, i{
     animation: show-fix-header 0.5s ease forwards;
     box-shadow: 0 0 5px var(--black-8);
     z-index: 9;
-    padding: 20px 30px !important;
+    padding: 20px !important;
 }
 .page-up-scroll-btn{
     position: fixed;
@@ -193,6 +193,7 @@ a, button, div, span, p, i{
     font-size: 20px;
     z-index: 99;
 }
+main{width: 100%;}
 section{width: 100%;}
 .hover-absolute-div{
     position: absolute;
@@ -279,6 +280,7 @@ section{width: 100%;}
 }
 
 
+
 /*------------HEADER-----------*/
 header{width: 100%;}
 header .container{display: flex; justify-content: center;}
@@ -290,10 +292,10 @@ header .container{display: flex; justify-content: center;}
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    padding: 20px;}
+    padding: 20px 5px;}
 .header-logo{display: flex; flex-direction: column; justify-content: center;align-items: center;}
-.header-logo img {width: 100px;}
-.header-logo p {color: #db1515;margin: 0;font-weight: 600;}
+.header-logo img {width: 80px;}
+.header-logo p {color: #db1515;margin: 0;font-weight: 600; font-size: 12px;}
 
 .offcanvas-open-btn{ padding: 15px 0;}
 .offcanvas-open-btn:hover{color: var(--text-color-1);}
@@ -313,8 +315,8 @@ header .container{display: flex; justify-content: center;}
     align-items: flex-start;
 }
 .canvas-link {
-    padding: 15px;
-    padding-left: 25px;
+    padding: 13px 18px;
+    margin: 5px 0;
     min-width: 100%;
     color: var(--text-color-10);
     font-size: var(--fs-5);
@@ -381,6 +383,7 @@ button.canvas-link{justify-content: space-between;}
     font-weight: 700;
     padding: 10px 0;
 }
+.nav-link.active{color: var(--text-color-1);}
 .nav-link:hover{
     color: var(--text-color-1);
 }
@@ -425,10 +428,12 @@ span.nav-link i{
 .nav-drop-menu a{
     color: var(--text-color-10);
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     font-size: var(--fs-5);
     font-weight: 700;
+    margin: 3px 0;
 }
+.nav-drop-menu a.active{background-color: var(--text-color-10);color: var(--text-color-1);}
 .nav-drop-menu a:hover{
     background-color: var(--bg-color-10);
     color: var(--text-color-1);
@@ -481,7 +486,7 @@ footer{
 }
 .footer-info-content {color: rgba(255, 255, 255, 0.5);}
 .footer-info-content span{padding: 10px 0;}
-.footer-info-content a{color: #fff !important;}
+.footer-info-content a{color: #fff !important; padding: 5px 0;}
 
 
 .footer-right{
@@ -520,6 +525,7 @@ footer .sosial-icons a:hover{
     background-color: var(--bg-color-6);
     color: rgba(255, 255, 255, 0.5);
 }
+.footer-bottom p{text-align: center; padding: 10px;}
 .footer-bottom a{color: var(--text-color-1);}
 .footer-bottom a:hover{color: var(--text-color-3);}
 
@@ -747,7 +753,7 @@ footer .sosial-icons a:hover{
     align-items: center;
 }
 .button-section span{
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
     color: var(--text-color-10);
     font-weight: 700;
     text-align: center;   
@@ -803,3 +809,360 @@ footer .sosial-icons a:hover{
 
 
 
+/*------------INAYE ABOUT------------*/
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+.about-text h1{
+    font-weight: bolder;
+    padding: 10px 0;
+}
+.about-text span{
+    font-size: var(--fs-6);
+    margin: 10px 0;
+    font-weight: 500;
+}
+.about-text p{
+    padding: 10px 0;
+}
+
+/*----MEQSED SECTION LG-----*/
+.meqsed-section-lg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: var(--bg-color-7);
+}
+.meqsed-section-lg .container{padding: 20px 0;}
+.meqsed-section-lg h1{
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 35px;
+}
+.meqsed-section-lg p{
+    font-size: var(--fs-5);
+    padding: 5px 10px;
+    text-align: center;
+}
+.meqsed-lg-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.meqsed-lg-col span{
+    font-size: var(--fs-5);
+    color: var(--text-color-1);
+    font-weight: 500;
+    padding: 15px;
+    text-align: center;
+    cursor: default;
+}
+.meqsed-lg-col span:hover{color: var(--text-color-3);}
+
+/*-------HESABAT SECTION SM-------*/
+.hesabat-section-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.hesabat-section-sm .container{
+    padding: 20px 0;
+}
+.hesabat-section-sm h1{
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 35px;
+}
+.hesabat-section-sm p{
+    font-size: var(--fs-5);
+    padding: 5px 10px;
+    text-align: center;
+}
+.hesabat-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.calc-counter{
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--text-color-1);
+}
+.hesabat-col span:nth-of-type(2){
+    font-size: var(--fs-5);
+    font-weight: 500;
+    text-align: center;
+}
+
+.hesabat-button{
+    color: var(--text-color-10);
+    background-color: var(--bg-color-1);
+    padding: 20px 35px;
+    font-size: var(--fs-9);
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+.hesabat-button:hover{
+    background-color: var(--bg-color-3);
+    animation: pulse-orange 1s ease infinite;
+    color: var(--text-color-10);
+}
+
+
+/*------INAYE ACTIVITIES--------*/
+.activities-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.activities-wrapper h1{
+    font-size: 25px;
+    color: var(--text-color-1);
+    padding: 10px;
+    font-weight: bold;
+}
+.activite-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.activite-item{
+    width: 95%;
+    padding: 10px 15px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.activite-item img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+.activite-item .activite-date{color: var(--text-color-8);padding: 5px 0;}
+.activite-item .activite-header{
+    padding: 10px 0;
+    color: var(--text-color-1);
+    font-size: var(--fs-6);
+    font-weight: 700;
+}
+.activite-item:hover .activite-header{color: var(--text-color-3);}
+.activite-item .activite-text{min-height: 140px;}
+.activite-item .activite-button{
+  align-self: center;
+  color: var(--black-7);
+  background-color: var(--bg-color-4);
+  padding: 10px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.activite-item .activite-button:hover{
+    background-color: var(--bg-color-1);
+    color: #fff;
+    animation: pulse-green 1s ease infinite;
+}
+
+.btn-group a{
+  padding: 5px 10px;
+  font-size: 10px;
+  color: var(--text-color-8);
+  margin: 0 3px;
+  background-color: var(--bg-color-7);
+  border-radius: 5px;
+}
+
+.btn-group a:hover{
+    background-color: var(--bg-color-1);
+    color: var(--bg-color-10);
+}
+.btn-group a:first-child,
+.btn-group a:last-child{
+  background-color: var(--bg-color-5);
+  color: var(--text-color-10);
+}
+.btn-group a:first-child i,
+.btn-group a:last-child i{
+  font-size: 12px;
+}
+.btn-group a:first-child:hover,
+.btn-group a:last-child:hover{
+  background-color: var(--bg-color-3);
+}
+.btn-group a.active{background-color: var(--bg-color-1);color: var(--text-color-10);}
+
+.inaye-uzv .uzv-content span{
+    font-size: 40px;
+    color: var(--text-color-1);
+    font-weight: bold;
+    padding: 10px 0;
+  }
+.inaye-uzv .uzv-content p{border-left: 3px solid var(--design-color-1);padding: 0 10px;}
+.inaye-uzv form{width: 90%;padding: 10px;}
+.inaye-uzv form label{padding: 5px;transition: 0.3s;}
+.inaye-uzv form label:hover{color: var(--text-color-3);}
+.inaye-uzv .form-control{border: 1px solid var(--design-color-1); caret-color: var(--design-color-1);}
+.inaye-uzv .form-control:focus{
+  border: 1px solid var(--design-color-1);
+  box-shadow: 1px 1px 5px #84c54e,-1px -1px 5px var(--design-color-1);
+}
+.inaye-uzv form button{
+  padding: 13px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 20px 0;
+  align-self: center;
+  background-color: var(--bg-color-4);
+}
+.inaye-uzv form button:hover{
+  background-color: var(--bg-color-3);
+  color: #fff;
+  animation: pulse-orange 1s ease infinite;
+}
+.inaye-konullu .uzv-content span{
+  font-size: 40px;
+  color: var(--text-color-1);
+  font-weight: bold;
+  padding: 10px 0;
+}
+.inaye-konullu .uzv-content p{border-left: 3px solid var(--design-color-1);padding: 0 10px;}
+.inaye-konullu form{width: 70%;padding: 10px;}
+.inaye-konullu form label{padding: 5px;transition: 0.3s;}
+.inaye-konullu form label:hover{color: #ff7e27;}
+.inaye-konullu .form-control{border: 1px solid var(--design-color-1); caret-color: var(--design-color-1);}
+.inaye-konullu .form-control:focus{
+  border: 1px solid var(--design-color-1);
+  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);}
+.inaye-konullu .form-select{border: 1px solid #84c54e;}
+.inaye-konullu .form-select:focus{
+  border: 1px solid var(--design-color-1);
+  box-shadow: 1px 1px 5px var(--design-color-1),-1px -1px 5px var(--design-color-1);}
+.inaye-konullu form button{
+  border: none;
+  padding: 13px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 20px 0;
+  align-self: center;
+  background-color: var(--bg-color-4);
+  transition: 0.3s;
+}
+.inaye-konullu form button:hover{
+  background-color: var(--bg-color-3);
+  color: var(--text-color-10);
+  animation: pulse-orange 1s ease infinite;
+}
+
+.inaye-ehtiyac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-image: url("../image/inaye-main/aksiya/aksiya-bg.jpg");
+  }
+.inaye-ehtiyac .error-div h1{
+  color: #84c54e;
+  font-size: 60px;
+  font-weight: bold;
+}
+.inaye-ehtiyac .error-div h5{
+  font-size: 30px;
+  color: #ff7e27;
+}
+.inaye-ehtiyac .error-div p{
+  font-size: 22px;
+}
+.inaye-ehtiyac .error-div a{
+  color: #fff;
+  background-color: #84c54e;
+  padding: 10px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 30px 0;
+  transition: 0.3s;
+}
+.inaye-ehtiyac .error-div a:hover{
+  background-color: #ff7e27;
+}
+
+.inaye-gallery .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.inaye-gallery .container h1{
+    color: var(--text-color-1);
+    font-weight: bold;
+    padding: 15px;
+}
+.photos-wrapper{
+    width: 100%;
+}
+.photo-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-item{
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+}
+.photo-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.photo-item .hover-absolute-div{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-7);
+    animation: show-hover-div 0.5s ease forwards;
+}
+.photo-item:hover .hover-absolute-div{display: flex;}
+@keyframes show-hover-div{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.photo-item .hover-absolute-div a{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(255,255,255,0.4);
+    font-size: 20px;
+    animation: show-photo-button 0.5s ease forwards;
+}
+.photo-item .hover-absolute-div a:hover{
+    background-color: var(--text-color-3);
+}
+@keyframes show-photo-button{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
