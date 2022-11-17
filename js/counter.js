@@ -3,7 +3,6 @@ let startCommand_0 = false;
 let startCommand_1 = false;
 let startCommand_2 = false;
 let startCommand_3 = false;
-let startCommand_4 = false;
 let reportSpan = document.querySelectorAll(".calc-counter");
 
 window.addEventListener("scroll",function(){
@@ -11,7 +10,6 @@ window.addEventListener("scroll",function(){
     if(scrollY > (reportSpan[1].offsetTop - 500)){startCommand_1 = true};
     if(scrollY > (reportSpan[2].offsetTop - 500)){startCommand_2 = true};
     if(scrollY > (reportSpan[3].offsetTop - 500)){startCommand_3 = true};
-    if(scrollY > (reportSpan[4].offsetTop - 500)){startCommand_4 = true};
 });
 
 

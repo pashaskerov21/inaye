@@ -4,11 +4,11 @@ let pageUpScrollBtn = document.querySelector(".page-up-scroll-btn");
 
 window.addEventListener("scroll",function(){
     if(scrollY > 200){
-        mobileHeader.classList.add("header-transform");
-        generalHeader.classList.add("header-transform");
+        mobileHeader.classList.add("header-transform","fixed-top");
+        generalHeader.classList.add("header-transform","fixed-top");
     }else{
-        mobileHeader.classList.remove("header-transform");
-        generalHeader.classList.remove("header-transform");
+        mobileHeader.classList.remove("header-transform","fixed-top");
+        generalHeader.classList.remove("header-transform","fixed-top");
     }
     if(scrollY > 400){
         pageUpScrollBtn.classList.remove("d-none");

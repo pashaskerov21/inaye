@@ -186,11 +186,10 @@ a, button, div, span, p, i{
     -webkit-transition: 0.3s;
 }
 .header-transform{
-    position: fixed;
+    /* position: fixed; */
     animation: show-fix-header 0.5s ease forwards;
     box-shadow: 0 0 5px var(--black-8);
     z-index: 9;
-    padding: 20px !important;
 }
 .page-up-scroll-btn{
     position: fixed;
@@ -330,7 +329,6 @@ form button:hover{
 
 /*------------HEADER-----------*/
 header{width: 100%;}
-header .container{display: flex; justify-content: center;}
 
 /*-----------MOBILE HEADER-------*/
 .mobile-header{
@@ -339,7 +337,7 @@ header .container{display: flex; justify-content: center;}
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    padding: 20px 5px;}
+    padding: 20px;}
 .header-logo{display: flex; flex-direction: column; justify-content: center;align-items: center;}
 .header-logo img {width: 80px;}
 .header-logo p {color: #db1515;font-weight: 600; font-size: 12px;padding: 5px 0;}
@@ -416,6 +414,7 @@ button.canvas-link{justify-content: space-between;}
     padding: 20px 0;
     background-color: var(--bg-color-10);
 }
+.general-header .container{display: flex; justify-content: center;}
 
 .nav-links-wrapper{
     width: 100%;
@@ -505,6 +504,7 @@ footer{
 .footer .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .footer-top{
     width: 100%;
@@ -522,7 +522,7 @@ footer{
     align-items: center;
     padding: 10px;
 }
-.footer-logo p {font-size: var(--fs-6);color: #db1515;margin: 0;}
+.footer-logo p {font-size: var(--fs-4);color: #db1515;margin: 5px 0;}
 
 .footer-logo img{width: 150px;}
 .footer-info-content{
@@ -660,7 +660,7 @@ footer .sosial-icons a:hover{
 .meqsed-wrapper p{
     color: var(--text-color-1);
     text-align: center;
-    padding: 15px;
+    padding: 15px 10px;
     font-weight: 700;
 }
 
@@ -1062,7 +1062,7 @@ footer .sosial-icons a:hover{
   }
 .inaye-uzv .uzv-content p{border-left: 3px solid var(--design-color-1);padding: 0 10px;}
 .inaye-konullu .uzv-content span{
-  font-size: 40px;
+  font-size: 35px;
   color: var(--text-color-1);
   font-weight: bold;
   padding: 10px 0;
